@@ -1,0 +1,23 @@
+{
+  "name": "autocomplete-ramda",
+  "main": "./lib/main",
+  "version": "0.0.0",
+  "description": "Autocomplete ramda methods",
+  "keywords": [
+    "ramda",
+    "autocomplete",
+    "ramdajs"
+  ],
+  "repository": "https://zhulduz@bitbucket.org/zhulduz/autocomplete-ramda.git",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "getProvider"
+      }
+    }
+  }
+}
