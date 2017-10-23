@@ -19,5 +19,8 @@
         "2.0.0": "getProvider"
       }
     }
+  },
+  "devDependencies": {
+    "standard": "^10.0.3"
   }
 }
