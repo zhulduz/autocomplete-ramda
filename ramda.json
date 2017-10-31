@@ -1,0 +1,2191 @@
+[
+  {
+    "name": "__",
+    "description": "A special placeholder value used to specify \"gaps\" within curried functions,\nallowing partial application of any combination of arguments, regardless of\ntheir positions.",
+    "args": []
+  },
+  {
+    "name": "add",
+    "description": "Adds two values.",
+    "args": [
+      "a",
+      "b"
+    ],
+    "returns": "Number"
+  },
+  {
+    "name": "addIndex",
+    "description": "A list iteration function that does not pass index or list to its callback",
+    "args": [
+      "fn"
+    ],
+    "returns": "function"
+  },
+  {
+    "name": "adjust",
+    "description": "The function to apply.",
+    "args": [
+      "fn",
+      "idx",
+      "list"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "all",
+    "description": "The predicate function.",
+    "args": [
+      "fn",
+      "list"
+    ],
+    "returns": "Boolean"
+  },
+  {
+    "name": "allPass",
+    "description": "An array of predicates to check",
+    "args": [
+      "predicates"
+    ],
+    "returns": "function"
+  },
+  {
+    "name": "always",
+    "description": "The value to wrap in a function",
+    "args": [
+      "val"
+    ],
+    "returns": "function"
+  },
+  {
+    "name": "and",
+    "description": "Returns true if both arguments are true; false otherwise.",
+    "args": [
+      "a",
+      "b"
+    ],
+    "returns": "Any"
+  },
+  {
+    "name": "any",
+    "description": "The predicate function.",
+    "args": [
+      "fn",
+      "list"
+    ],
+    "returns": "Boolean"
+  },
+  {
+    "name": "anyPass",
+    "description": "An array of predicates to check",
+    "args": [
+      "predicates"
+    ],
+    "returns": "function"
+  },
+  {
+    "name": "ap",
+    "description": "ap applies a list of functions to a list of values.",
+    "args": [
+      "applyF",
+      "applyX"
+    ],
+    "returns": "*"
+  },
+  {
+    "name": "aperture",
+    "description": "The size of the tuples to create",
+    "args": [
+      "n",
+      "list"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "append",
+    "description": "The element to add to the end of the new list.",
+    "args": [
+      "el",
+      "list"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "apply",
+    "description": "The function which will be called with args",
+    "args": [
+      "fn",
+      "args"
+    ],
+    "returns": "*"
+  },
+  {
+    "name": "applySpec",
+    "description": "an object recursively mapping properties to functions for\n       producing the values for these properties.",
+    "args": [
+      "spec"
+    ],
+    "returns": "function"
+  },
+  {
+    "name": "applyTo",
+    "description": "The value",
+    "args": [
+      "x",
+      "f"
+    ],
+    "returns": "*"
+  },
+  {
+    "name": "ascend",
+    "description": "A function of arity one that returns a value that can be compared",
+    "args": [
+      "fn",
+      "a",
+      "b"
+    ],
+    "returns": "Number"
+  },
+  {
+    "name": "assoc",
+    "description": "The property name to set",
+    "args": [
+      "prop",
+      "val",
+      "obj"
+    ],
+    "returns": "Object"
+  },
+  {
+    "name": "assocPath",
+    "description": "the path to set",
+    "args": [
+      "path",
+      "val",
+      "obj"
+    ],
+    "returns": "Object"
+  },
+  {
+    "name": "binary",
+    "description": "The function to wrap.",
+    "args": [
+      "fn"
+    ],
+    "returns": "function"
+  },
+  {
+    "name": "bind",
+    "description": "The function to bind to context",
+    "args": [
+      "fn",
+      "thisObj"
+    ],
+    "returns": "function"
+  },
+  {
+    "name": "both",
+    "description": "A predicate",
+    "args": [
+      "f",
+      "g"
+    ],
+    "returns": "function"
+  },
+  {
+    "name": "call",
+    "description": "The function to apply to the remaining arguments.",
+    "args": [
+      "fn",
+      "args"
+    ],
+    "returns": "*"
+  },
+  {
+    "name": "chain",
+    "description": "The function to map with",
+    "args": [
+      "fn",
+      "list"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "clamp",
+    "description": "The lower limit of the clamp (inclusive)",
+    "args": [
+      "minimum",
+      "maximum",
+      "value"
+    ],
+    "returns": "Number"
+  },
+  {
+    "name": "clone",
+    "description": "The object or array to clone",
+    "args": [
+      "value"
+    ],
+    "returns": "*"
+  },
+  {
+    "name": "comparator",
+    "description": "A predicate function of arity two which will return true if the first argument\nis less than the second, false otherwise",
+    "args": [
+      "pred"
+    ],
+    "returns": "function"
+  },
+  {
+    "name": "complement",
+    "description": "Takes a function f and returns a function g such that if called with the same arguments\nwhen f returns a \"truthy\" value, g returns false and when f returns a \"falsy\" value g returns true.",
+    "args": [
+      "f"
+    ],
+    "returns": "function"
+  },
+  {
+    "name": "compose",
+    "description": "The functions to compose",
+    "args": [
+      "...functions"
+    ],
+    "returns": "function"
+  },
+  {
+    "name": "composeK",
+    "description": "The functions to compose",
+    "args": [
+      "...functions"
+    ],
+    "returns": "function"
+  },
+  {
+    "name": "composeP",
+    "description": "The functions to compose",
+    "args": [
+      "functions"
+    ],
+    "returns": "function"
+  },
+  {
+    "name": "concat",
+    "description": "The first list",
+    "args": [
+      "firstList",
+      "secondList"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "cond",
+    "description": "A list of [predicate, transformer]",
+    "args": [
+      "pairs"
+    ],
+    "returns": "function"
+  },
+  {
+    "name": "construct",
+    "description": "The constructor function to wrap.",
+    "args": [
+      "fn"
+    ],
+    "returns": "function"
+  },
+  {
+    "name": "constructN",
+    "description": "The arity of the constructor function.",
+    "args": [
+      "n",
+      "Fn"
+    ],
+    "returns": "function"
+  },
+  {
+    "name": "contains",
+    "description": "The item to compare against.",
+    "args": [
+      "a",
+      "list"
+    ],
+    "returns": "Boolean"
+  },
+  {
+    "name": "converge",
+    "description": "A function. after will be invoked with the return values of\n       fn1 and fn2 as its arguments.",
+    "args": [
+      "after",
+      "functions"
+    ],
+    "returns": "function"
+  },
+  {
+    "name": "countBy",
+    "description": "The function used to map values to keys.",
+    "args": [
+      "fn",
+      "list"
+    ],
+    "returns": "Object"
+  },
+  {
+    "name": "curry",
+    "description": "The function to curry.",
+    "args": [
+      "fn"
+    ],
+    "returns": "function"
+  },
+  {
+    "name": "curryN",
+    "description": "The arity for the returned function.",
+    "args": [
+      "length",
+      "fn"
+    ],
+    "returns": "function"
+  },
+  {
+    "name": "dec",
+    "description": "Decrements its argument.",
+    "args": [
+      "n"
+    ],
+    "returns": "Number"
+  },
+  {
+    "name": "defaultTo",
+    "description": "The default value.",
+    "args": [
+      "default",
+      "val"
+    ],
+    "returns": "*"
+  },
+  {
+    "name": "descend",
+    "description": "A function of arity one that returns a value that can be compared",
+    "args": [
+      "fn",
+      "a",
+      "b"
+    ],
+    "returns": "Number"
+  },
+  {
+    "name": "difference",
+    "description": "The first list.",
+    "args": [
+      "list1",
+      "list2"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "differenceWith",
+    "description": "A predicate used to test whether two items are equal.",
+    "args": [
+      "pred",
+      "list1",
+      "list2"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "dissoc",
+    "description": "The name of the property to dissociate",
+    "args": [
+      "prop",
+      "obj"
+    ],
+    "returns": "Object"
+  },
+  {
+    "name": "dissocPath",
+    "description": "The path to the value to omit",
+    "args": [
+      "path",
+      "obj"
+    ],
+    "returns": "Object"
+  },
+  {
+    "name": "divide",
+    "description": "The first value.",
+    "args": [
+      "a",
+      "b"
+    ],
+    "returns": "Number"
+  },
+  {
+    "name": "drop",
+    "description": "Returns all but the first n elements of the given list, string, or\ntransducer/transformer (or object with a drop method).",
+    "args": [
+      "n",
+      "list"
+    ],
+    "returns": "*"
+  },
+  {
+    "name": "dropLast",
+    "description": "The number of elements of list to skip.",
+    "args": [
+      "n",
+      "list"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "dropLastWhile",
+    "description": "The function to be called on each element",
+    "args": [
+      "predicate",
+      "xs"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "dropRepeats",
+    "description": "The array to consider.",
+    "args": [
+      "list"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "dropRepeatsWith",
+    "description": "A predicate used to test whether two items are equal.",
+    "args": [
+      "pred",
+      "list"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "dropWhile",
+    "description": "The function called per iteration.",
+    "args": [
+      "fn",
+      "xs"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "either",
+    "description": "a predicate",
+    "args": [
+      "f",
+      "g"
+    ],
+    "returns": "function"
+  },
+  {
+    "name": "empty",
+    "description": "Returns the empty value of its argument's type. Ramda defines the empty\nvalue of Array ([]), Object ({}), String (''), and Arguments. Other\ntypes are supported if they define <Type>.empty,\n<Type>.prototype.empty or implement the\nFantasyLand Monoid spec.",
+    "args": [
+      "x"
+    ],
+    "returns": "*"
+  },
+  {
+    "name": "endsWith",
+    "description": "Checks if a list ends with the provided values",
+    "args": [
+      "suffix",
+      "list"
+    ],
+    "returns": "Boolean"
+  },
+  {
+    "name": "eqBy",
+    "description": "Takes a function and two values in its domain and returns true if the\nvalues map to the same value in the codomain; false otherwise.",
+    "args": [
+      "f",
+      "x",
+      "y"
+    ],
+    "returns": "Boolean"
+  },
+  {
+    "name": "eqProps",
+    "description": "The name of the property to compare",
+    "args": [
+      "prop",
+      "obj1",
+      "obj2"
+    ],
+    "returns": "Boolean"
+  },
+  {
+    "name": "equals",
+    "description": "Returns true if its arguments are equivalent, false otherwise. Handles\ncyclical data structures.",
+    "args": [
+      "a",
+      "b"
+    ],
+    "returns": "Boolean"
+  },
+  {
+    "name": "evolve",
+    "description": "The object specifying transformation functions to apply\n       to the object.",
+    "args": [
+      "transformations",
+      "object"
+    ],
+    "returns": "Object"
+  },
+  {
+    "name": "F",
+    "description": "A function that always returns false. Any passed in parameters are ignored.",
+    "args": [
+      ""
+    ],
+    "returns": "Boolean"
+  },
+  {
+    "name": "filter",
+    "description": "Takes a predicate and a Filterable, and returns a new filterable of the\nsame type containing the members of the given filterable which satisfy the\ngiven predicate. Filterable objects include plain objects or any object\nthat has a filter method such as Array.",
+    "args": [
+      "pred",
+      "filterable"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "find",
+    "description": "The predicate function used to determine if the element is the\n       desired one.",
+    "args": [
+      "fn",
+      "list"
+    ],
+    "returns": "Object"
+  },
+  {
+    "name": "findIndex",
+    "description": "The predicate function used to determine if the element is the\ndesired one.",
+    "args": [
+      "fn",
+      "list"
+    ],
+    "returns": "Number"
+  },
+  {
+    "name": "findLast",
+    "description": "The predicate function used to determine if the element is the\ndesired one.",
+    "args": [
+      "fn",
+      "list"
+    ],
+    "returns": "Object"
+  },
+  {
+    "name": "findLastIndex",
+    "description": "The predicate function used to determine if the element is the\ndesired one.",
+    "args": [
+      "fn",
+      "list"
+    ],
+    "returns": "Number"
+  },
+  {
+    "name": "flatten",
+    "description": "The array to consider.",
+    "args": [
+      "list"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "flip",
+    "description": "The function to invoke with its first two parameters reversed.",
+    "args": [
+      "fn"
+    ],
+    "returns": "*"
+  },
+  {
+    "name": "forEach",
+    "description": "The function to invoke. Receives one argument, value.",
+    "args": [
+      "fn",
+      "list"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "forEachObjIndexed",
+    "description": "The function to invoke. Receives three argument, value, key, obj.",
+    "args": [
+      "fn",
+      "obj"
+    ],
+    "returns": "Object"
+  },
+  {
+    "name": "fromPairs",
+    "description": "An array of two-element arrays that will be the keys and values of the output object.",
+    "args": [
+      "pairs"
+    ],
+    "returns": "Object"
+  },
+  {
+    "name": "groupBy",
+    "description": "Function :: a -> String",
+    "args": [
+      "fn",
+      "list"
+    ],
+    "returns": "Object"
+  },
+  {
+    "name": "groupWith",
+    "description": "Function for determining whether two given (adjacent)\n       elements should be in the same group",
+    "args": [
+      "fn",
+      "list"
+    ],
+    "returns": "List"
+  },
+  {
+    "name": "gt",
+    "description": "Returns true if the first argument is greater than the second; false\notherwise.",
+    "args": [
+      "a",
+      "b"
+    ],
+    "returns": "Boolean"
+  },
+  {
+    "name": "gte",
+    "description": "Returns true if the first argument is greater than or equal to the second;\nfalse otherwise.",
+    "args": [
+      "a",
+      "b"
+    ],
+    "returns": "Boolean"
+  },
+  {
+    "name": "has",
+    "description": "The name of the property to check for.",
+    "args": [
+      "prop",
+      "obj"
+    ],
+    "returns": "Boolean"
+  },
+  {
+    "name": "hasIn",
+    "description": "The name of the property to check for.",
+    "args": [
+      "prop",
+      "obj"
+    ],
+    "returns": "Boolean"
+  },
+  {
+    "name": "head",
+    "description": "Returns the first element of the given list or string. In some libraries\nthis function is named first.",
+    "args": [
+      "list"
+    ],
+    "returns": "*"
+  },
+  {
+    "name": "identical",
+    "description": "Returns true if its arguments are identical, false otherwise. Values are\nidentical if they reference the same memory. NaN is identical to NaN;\n0 and -0 are not identical.",
+    "args": [
+      "a",
+      "b"
+    ],
+    "returns": "Boolean"
+  },
+  {
+    "name": "identity",
+    "description": "The value to return.",
+    "args": [
+      "x"
+    ],
+    "returns": "*"
+  },
+  {
+    "name": "ifElse",
+    "description": "A predicate function",
+    "args": [
+      "condition",
+      "onTrue",
+      "onFalse"
+    ],
+    "returns": "function"
+  },
+  {
+    "name": "inc",
+    "description": "Increments its argument.",
+    "args": [
+      "n"
+    ],
+    "returns": "Number"
+  },
+  {
+    "name": "indexBy",
+    "description": "Function :: a -> String",
+    "args": [
+      "fn",
+      "array"
+    ],
+    "returns": "Object"
+  },
+  {
+    "name": "indexOf",
+    "description": "The item to find.",
+    "args": [
+      "target",
+      "xs"
+    ],
+    "returns": "Number"
+  },
+  {
+    "name": "init",
+    "description": "Returns all but the last element of the given list or string.",
+    "args": [
+      "list"
+    ],
+    "returns": "*"
+  },
+  {
+    "name": "innerJoin",
+    "description": "Takes a predicate pred, a list xs, and a list ys, and returns a list\nxs' comprising each of the elements of xs which is equal to one or more\nelements of ys according to pred.",
+    "args": [
+      "pred",
+      "xs",
+      "ys"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "insert",
+    "description": "The position to insert the element",
+    "args": [
+      "index",
+      "elt",
+      "list"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "insertAll",
+    "description": "The position to insert the sub-list",
+    "args": [
+      "index",
+      "elts",
+      "list"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "intersection",
+    "description": "The first list.",
+    "args": [
+      "list1",
+      "list2"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "intersperse",
+    "description": "The element to add to the list.",
+    "args": [
+      "separator",
+      "list"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "into",
+    "description": "The initial accumulator value.",
+    "args": [
+      "acc",
+      "xf",
+      "list"
+    ],
+    "returns": "*"
+  },
+  {
+    "name": "invert",
+    "description": "The object or array to invert",
+    "args": [
+      "obj"
+    ],
+    "returns": "Object"
+  },
+  {
+    "name": "invertObj",
+    "description": "The object or array to invert",
+    "args": [
+      "obj"
+    ],
+    "returns": "Object"
+  },
+  {
+    "name": "invoker",
+    "description": "Number of arguments the returned function should take\n       before the target object.",
+    "args": [
+      "arity",
+      "method"
+    ],
+    "returns": "function"
+  },
+  {
+    "name": "is",
+    "description": "A constructor",
+    "args": [
+      "ctor",
+      "val"
+    ],
+    "returns": "Boolean"
+  },
+  {
+    "name": "isEmpty",
+    "description": "Returns true if the given value is its type's empty value; false\notherwise.",
+    "args": [
+      "x"
+    ],
+    "returns": "Boolean"
+  },
+  {
+    "name": "isNil",
+    "description": "The value to test.",
+    "args": [
+      "x"
+    ],
+    "returns": "Boolean"
+  },
+  {
+    "name": "join",
+    "description": "The string used to separate the elements.",
+    "args": [
+      "separator",
+      "xs"
+    ],
+    "returns": "String"
+  },
+  {
+    "name": "juxt",
+    "description": "An array of functions",
+    "args": [
+      "fns"
+    ],
+    "returns": "function"
+  },
+  {
+    "name": "keys",
+    "description": "The object to extract properties from",
+    "args": [
+      "obj"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "keysIn",
+    "description": "The object to extract properties from",
+    "args": [
+      "obj"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "last",
+    "description": "Returns the last element of the given list or string.",
+    "args": [
+      "list"
+    ],
+    "returns": "*"
+  },
+  {
+    "name": "lastIndexOf",
+    "description": "The item to find.",
+    "args": [
+      "target",
+      "xs"
+    ],
+    "returns": "Number"
+  },
+  {
+    "name": "length",
+    "description": "The array to inspect.",
+    "args": [
+      "list"
+    ],
+    "returns": "Number"
+  },
+  {
+    "name": "lens",
+    "description": "Returns a lens for the given getter and setter functions. The getter \"gets\"\nthe value of the focus; the setter \"sets\" the value of the focus. The setter\nshould not mutate the data structure.",
+    "args": [
+      "getter",
+      "setter"
+    ],
+    "returns": "Lens"
+  },
+  {
+    "name": "lensIndex",
+    "description": "Returns a lens whose focus is the specified index.",
+    "args": [
+      "n"
+    ],
+    "returns": "Lens"
+  },
+  {
+    "name": "lensPath",
+    "description": "The path to use.",
+    "args": [
+      "path"
+    ],
+    "returns": "Lens"
+  },
+  {
+    "name": "lensProp",
+    "description": "Returns a lens whose focus is the specified property.",
+    "args": [
+      "k"
+    ],
+    "returns": "Lens"
+  },
+  {
+    "name": "lift",
+    "description": "The function to lift into higher context",
+    "args": [
+      "fn"
+    ],
+    "returns": "function"
+  },
+  {
+    "name": "liftN",
+    "description": "The function to lift into higher context",
+    "args": [
+      "fn"
+    ],
+    "returns": "function"
+  },
+  {
+    "name": "lt",
+    "description": "Returns true if the first argument is less than the second; false\notherwise.",
+    "args": [
+      "a",
+      "b"
+    ],
+    "returns": "Boolean"
+  },
+  {
+    "name": "lte",
+    "description": "Returns true if the first argument is less than or equal to the second;\nfalse otherwise.",
+    "args": [
+      "a",
+      "b"
+    ],
+    "returns": "Boolean"
+  },
+  {
+    "name": "map",
+    "description": "The function to be called on every element of the input list.",
+    "args": [
+      "fn",
+      "list"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "mapAccum",
+    "description": "The function to be called on every element of the input list.",
+    "args": [
+      "fn",
+      "acc",
+      "list"
+    ],
+    "returns": "*"
+  },
+  {
+    "name": "mapAccumRight",
+    "description": "The function to be called on every element of the input list.",
+    "args": [
+      "fn",
+      "acc",
+      "list"
+    ],
+    "returns": "*"
+  },
+  {
+    "name": "mapObjIndexed",
+    "description": "An Object-specific version of map. The function is applied to three\narguments: (value, key, obj). If only the value is significant, use\nmap instead.",
+    "args": [
+      "fn",
+      "obj"
+    ],
+    "returns": "Object"
+  },
+  {
+    "name": "match",
+    "description": "A regular expression.",
+    "args": [
+      "rx",
+      "str"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "mathMod",
+    "description": "The dividend.",
+    "args": [
+      "m",
+      "p"
+    ],
+    "returns": "Number"
+  },
+  {
+    "name": "max",
+    "description": "Returns the larger of its two arguments.",
+    "args": [
+      "a",
+      "b"
+    ],
+    "returns": "*"
+  },
+  {
+    "name": "maxBy",
+    "description": "Takes a function and two values, and returns whichever value produces the\nlarger result when passed to the provided function.",
+    "args": [
+      "f",
+      "a",
+      "b"
+    ],
+    "returns": "*"
+  },
+  {
+    "name": "mean",
+    "description": "Returns the mean of the given list of numbers.",
+    "args": [
+      "list"
+    ],
+    "returns": "Number"
+  },
+  {
+    "name": "median",
+    "description": "Returns the median of the given list of numbers.",
+    "args": [
+      "list"
+    ],
+    "returns": "Number"
+  },
+  {
+    "name": "memoize",
+    "description": "The function to memoize.",
+    "args": [
+      "fn"
+    ],
+    "returns": "function"
+  },
+  {
+    "name": "memoizeWith",
+    "description": "The function to generate the cache key.",
+    "args": [
+      "fn",
+      "fn"
+    ],
+    "returns": "function"
+  },
+  {
+    "name": "merge",
+    "description": "Create a new object with the own properties of the first object merged with\nthe own properties of the second object. If a key exists in both objects,\nthe value from the second object will be used.",
+    "args": [
+      "l",
+      "r"
+    ],
+    "returns": "Object"
+  },
+  {
+    "name": "mergeAll",
+    "description": "An array of objects",
+    "args": [
+      "list"
+    ],
+    "returns": "Object"
+  },
+  {
+    "name": "mergeDeepLeft",
+    "description": "Creates a new object with the own properties of the first object merged with\nthe own properties of the second object. If a key exists in both objects:",
+    "args": [
+      "lObj",
+      "rObj"
+    ],
+    "returns": "Object"
+  },
+  {
+    "name": "mergeDeepRight",
+    "description": "Creates a new object with the own properties of the first object merged with\nthe own properties of the second object. If a key exists in both objects:",
+    "args": [
+      "lObj",
+      "rObj"
+    ],
+    "returns": "Object"
+  },
+  {
+    "name": "mergeDeepWith",
+    "description": "Creates a new object with the own properties of the two provided objects.\nIf a key exists in both objects:",
+    "args": [
+      "fn",
+      "lObj",
+      "rObj"
+    ],
+    "returns": "Object"
+  },
+  {
+    "name": "mergeDeepWithKey",
+    "description": "Creates a new object with the own properties of the two provided objects.\nIf a key exists in both objects:",
+    "args": [
+      "fn",
+      "lObj",
+      "rObj"
+    ],
+    "returns": "Object"
+  },
+  {
+    "name": "mergeWith",
+    "description": "Creates a new object with the own properties of the two provided objects. If\na key exists in both objects, the provided function is applied to the values\nassociated with the key in each object, with the result being used as the\nvalue associated with the key in the returned object.",
+    "args": [
+      "fn",
+      "l",
+      "r"
+    ],
+    "returns": "Object"
+  },
+  {
+    "name": "mergeWithKey",
+    "description": "Creates a new object with the own properties of the two provided objects. If\na key exists in both objects, the provided function is applied to the key\nand the values associated with the key in each object, with the result being\nused as the value associated with the key in the returned object.",
+    "args": [
+      "fn",
+      "l",
+      "r"
+    ],
+    "returns": "Object"
+  },
+  {
+    "name": "min",
+    "description": "Returns the smaller of its two arguments.",
+    "args": [
+      "a",
+      "b"
+    ],
+    "returns": "*"
+  },
+  {
+    "name": "minBy",
+    "description": "Takes a function and two values, and returns whichever value produces the\nsmaller result when passed to the provided function.",
+    "args": [
+      "f",
+      "a",
+      "b"
+    ],
+    "returns": "*"
+  },
+  {
+    "name": "modulo",
+    "description": "The value to the divide.",
+    "args": [
+      "a",
+      "b"
+    ],
+    "returns": "Number"
+  },
+  {
+    "name": "multiply",
+    "description": "The first value.",
+    "args": [
+      "a",
+      "b"
+    ],
+    "returns": "Number"
+  },
+  {
+    "name": "nAry",
+    "description": "The desired arity of the new function.",
+    "args": [
+      "n",
+      "fn"
+    ],
+    "returns": "function"
+  },
+  {
+    "name": "negate",
+    "description": "Negates its argument.",
+    "args": [
+      "n"
+    ],
+    "returns": "Number"
+  },
+  {
+    "name": "none",
+    "description": "The predicate function.",
+    "args": [
+      "fn",
+      "list"
+    ],
+    "returns": "Boolean"
+  },
+  {
+    "name": "not",
+    "description": "any value",
+    "args": [
+      "a"
+    ],
+    "returns": "Boolean"
+  },
+  {
+    "name": "nth",
+    "description": "Returns the nth element of the given list or string. If n is negative the\nelement at index length + n is returned.",
+    "args": [
+      "offset",
+      "list"
+    ],
+    "returns": "*"
+  },
+  {
+    "name": "nthArg",
+    "description": "Returns a function which returns its nth argument.",
+    "args": [
+      "n"
+    ],
+    "returns": "function"
+  },
+  {
+    "name": "o",
+    "description": "o is a curried composition function that returns a unary function.\nLike compose, o performs right-to-left function composition.\nUnlike compose, the rightmost function passed to o will be\ninvoked with only one argument.",
+    "args": [
+      "f",
+      "g"
+    ],
+    "returns": "function"
+  },
+  {
+    "name": "objOf",
+    "description": "Creates an object containing a single key:value pair.",
+    "args": [
+      "key",
+      "val"
+    ],
+    "returns": "Object"
+  },
+  {
+    "name": "of",
+    "description": "any value",
+    "args": [
+      "x"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "omit",
+    "description": "an array of String property names to omit from the new object",
+    "args": [
+      "names",
+      "obj"
+    ],
+    "returns": "Object"
+  },
+  {
+    "name": "once",
+    "description": "The function to wrap in a call-only-once wrapper.",
+    "args": [
+      "fn"
+    ],
+    "returns": "function"
+  },
+  {
+    "name": "or",
+    "description": "Returns true if one or both of its arguments are true. Returns false\nif both arguments are false.",
+    "args": [
+      "a",
+      "b"
+    ],
+    "returns": "Any"
+  },
+  {
+    "name": "over",
+    "description": "Returns the result of \"setting\" the portion of the given data structure\nfocused by the given lens to the result of applying the given function to\nthe focused value.",
+    "args": [
+      "lens",
+      "v",
+      "x"
+    ],
+    "returns": "*"
+  },
+  {
+    "name": "pair",
+    "description": "Takes two arguments, fst and snd, and returns [fst, snd].",
+    "args": [
+      "fst",
+      "snd"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "partial",
+    "description": "Takes a function f and a list of arguments, and returns a function g.\nWhen applied, g returns the result of applying f to the arguments\nprovided initially followed by the arguments provided to g.",
+    "args": [
+      "f",
+      "args"
+    ],
+    "returns": "function"
+  },
+  {
+    "name": "partialRight",
+    "description": "Takes a function f and a list of arguments, and returns a function g.\nWhen applied, g returns the result of applying f to the arguments\nprovided to g followed by the arguments provided initially.",
+    "args": [
+      "f",
+      "args"
+    ],
+    "returns": "function"
+  },
+  {
+    "name": "partition",
+    "description": "A predicate to determine which side the element belongs to.",
+    "args": [
+      "pred",
+      "filterable"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "path",
+    "description": "The path to use.",
+    "args": [
+      "path",
+      "obj"
+    ],
+    "returns": "*"
+  },
+  {
+    "name": "pathEq",
+    "description": "The path of the nested property to use",
+    "args": [
+      "path",
+      "val",
+      "obj"
+    ],
+    "returns": "Boolean"
+  },
+  {
+    "name": "pathOr",
+    "description": "The default value.",
+    "args": [
+      "d",
+      "p",
+      "obj"
+    ],
+    "returns": "*"
+  },
+  {
+    "name": "pathSatisfies",
+    "description": "Returns true if the specified object property at given path satisfies the\ngiven predicate; false otherwise.",
+    "args": [
+      "pred",
+      "propPath",
+      "obj"
+    ],
+    "returns": "Boolean"
+  },
+  {
+    "name": "pick",
+    "description": "an array of String property names to copy onto a new object",
+    "args": [
+      "names",
+      "obj"
+    ],
+    "returns": "Object"
+  },
+  {
+    "name": "pickAll",
+    "description": "an array of String property names to copy onto a new object",
+    "args": [
+      "names",
+      "obj"
+    ],
+    "returns": "Object"
+  },
+  {
+    "name": "pickBy",
+    "description": "A predicate to determine whether or not a key\n       should be included on the output object.",
+    "args": [
+      "pred",
+      "obj"
+    ],
+    "returns": "Object"
+  },
+  {
+    "name": "pipe",
+    "description": "Performs left-to-right function composition. The leftmost function may have\nany arity; the remaining functions must be unary.",
+    "args": [
+      "functions"
+    ],
+    "returns": "function"
+  },
+  {
+    "name": "pipeK",
+    "description": "Returns the left-to-right Kleisli composition of the provided functions,\neach of which must return a value of a type supported by chain.",
+    "args": [
+      ""
+    ],
+    "returns": "function"
+  },
+  {
+    "name": "pipeP",
+    "description": "Performs left-to-right composition of one or more Promise-returning\nfunctions. The leftmost function may have any arity; the remaining functions\nmust be unary.",
+    "args": [
+      "functions"
+    ],
+    "returns": "function"
+  },
+  {
+    "name": "pluck",
+    "description": "The key name to pluck off of each object.",
+    "args": [
+      "key",
+      "f"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "prepend",
+    "description": "The item to add to the head of the output list.",
+    "args": [
+      "el",
+      "list"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "product",
+    "description": "An array of numbers",
+    "args": [
+      "list"
+    ],
+    "returns": "Number"
+  },
+  {
+    "name": "project",
+    "description": "The property names to project",
+    "args": [
+      "props",
+      "objs"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "prop",
+    "description": "The property name",
+    "args": [
+      "p",
+      "obj"
+    ],
+    "returns": "*"
+  },
+  {
+    "name": "propEq",
+    "description": "Returns true if the specified object property is equal, in\nR.equals terms, to the given value; false otherwise.\nYou can test multiple properties with R.where.",
+    "args": [
+      "name",
+      "val",
+      "obj"
+    ],
+    "returns": "Boolean"
+  },
+  {
+    "name": "propIs",
+    "description": "Returns true if the specified object property is of the given type;\nfalse otherwise.",
+    "args": [
+      "type",
+      "name",
+      "obj"
+    ],
+    "returns": "Boolean"
+  },
+  {
+    "name": "propOr",
+    "description": "The default value.",
+    "args": [
+      "val",
+      "p",
+      "obj"
+    ],
+    "returns": "*"
+  },
+  {
+    "name": "props",
+    "description": "The property names to fetch",
+    "args": [
+      "ps",
+      "obj"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "propSatisfies",
+    "description": "Returns true if the specified object property satisfies the given\npredicate; false otherwise. You can test multiple properties with\nR.where.",
+    "args": [
+      "pred",
+      "name",
+      "obj"
+    ],
+    "returns": "Boolean"
+  },
+  {
+    "name": "range",
+    "description": "The first number in the list.",
+    "args": [
+      "from",
+      "to"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "reduce",
+    "description": "The iterator function. Receives two values, the accumulator and the\n       current element from the array.",
+    "args": [
+      "fn",
+      "acc",
+      "list"
+    ],
+    "returns": "*"
+  },
+  {
+    "name": "reduceBy",
+    "description": "The function that reduces the elements of each group to a single\n       value. Receives two values, accumulator for a particular group and the current element.",
+    "args": [
+      "valueFn",
+      "acc",
+      "keyFn",
+      "list"
+    ],
+    "returns": "Object"
+  },
+  {
+    "name": "reduced",
+    "description": "The final value of the reduce.",
+    "args": [
+      "x"
+    ],
+    "returns": "*"
+  },
+  {
+    "name": "reduceRight",
+    "description": "The iterator function. Receives two values, the current element from the array\n       and the accumulator.",
+    "args": [
+      "fn",
+      "acc",
+      "list"
+    ],
+    "returns": "*"
+  },
+  {
+    "name": "reduceWhile",
+    "description": "The predicate. It is passed the accumulator and the\n       current element.",
+    "args": [
+      "pred",
+      "fn",
+      "a",
+      "list"
+    ],
+    "returns": "*"
+  },
+  {
+    "name": "reject",
+    "description": "The complement of filter.",
+    "args": [
+      "pred",
+      "filterable"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "remove",
+    "description": "The position to start removing elements",
+    "args": [
+      "start",
+      "count",
+      "list"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "repeat",
+    "description": "The value to repeat.",
+    "args": [
+      "value",
+      "n"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "replace",
+    "description": "A regular expression or a substring to match.",
+    "args": [
+      "pattern",
+      "replacement",
+      "str"
+    ],
+    "returns": "String"
+  },
+  {
+    "name": "reverse",
+    "description": "Returns a new list or string with the elements or characters in reverse\norder.",
+    "args": [
+      "list"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "scan",
+    "description": "The iterator function. Receives two values, the accumulator and the\n       current element from the array",
+    "args": [
+      "fn",
+      "acc",
+      "list"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "sequence",
+    "description": "Transforms a Traversable\nof Applicative into an\nApplicative of Traversable.",
+    "args": [
+      "of",
+      "traversable"
+    ],
+    "returns": "*"
+  },
+  {
+    "name": "set",
+    "description": "Returns the result of \"setting\" the portion of the given data structure\nfocused by the given lens to the given value.",
+    "args": [
+      "lens",
+      "v",
+      "x"
+    ],
+    "returns": "*"
+  },
+  {
+    "name": "slice",
+    "description": "The start index (inclusive).",
+    "args": [
+      "fromIndex",
+      "toIndex",
+      "list"
+    ],
+    "returns": "*"
+  },
+  {
+    "name": "sort",
+    "description": "A sorting function :: a -> b -> Int",
+    "args": [
+      "comparator",
+      "list"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "sortBy",
+    "description": "The list to sort.",
+    "args": [
+      "fn",
+      "list"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "sortWith",
+    "description": "A list of comparator functions.",
+    "args": [
+      "functions",
+      "list"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "split",
+    "description": "The pattern.",
+    "args": [
+      "sep",
+      "str"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "splitAt",
+    "description": "The index where the array/string is split.",
+    "args": [
+      "index",
+      "array"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "splitEvery",
+    "description": "Splits a collection into slices of the specified length.",
+    "args": [
+      "n",
+      "list"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "splitWhen",
+    "description": "The predicate that determines where the array is split.",
+    "args": [
+      "pred",
+      "list"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "startsWith",
+    "description": "Checks if a list starts with the provided values",
+    "args": [
+      "prefix",
+      "list"
+    ],
+    "returns": "Boolean"
+  },
+  {
+    "name": "subtract",
+    "description": "The first value.",
+    "args": [
+      "a",
+      "b"
+    ],
+    "returns": "Number"
+  },
+  {
+    "name": "sum",
+    "description": "An array of numbers",
+    "args": [
+      "list"
+    ],
+    "returns": "Number"
+  },
+  {
+    "name": "symmetricDifference",
+    "description": "The first list.",
+    "args": [
+      "list1",
+      "list2"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "symmetricDifferenceWith",
+    "description": "A predicate used to test whether two items are equal.",
+    "args": [
+      "pred",
+      "list1",
+      "list2"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "T",
+    "description": "A function that always returns true. Any passed in parameters are ignored.",
+    "args": [
+      ""
+    ],
+    "returns": "Boolean"
+  },
+  {
+    "name": "tail",
+    "description": "Returns all but the first element of the given list or string (or object\nwith a tail method).",
+    "args": [
+      "list"
+    ],
+    "returns": "*"
+  },
+  {
+    "name": "take",
+    "description": "Returns the first n elements of the given list, string, or\ntransducer/transformer (or object with a take method).",
+    "args": [
+      "n",
+      "list"
+    ],
+    "returns": "*"
+  },
+  {
+    "name": "takeLast",
+    "description": "The number of elements to return.",
+    "args": [
+      "n",
+      "xs"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "takeLastWhile",
+    "description": "The function called per iteration.",
+    "args": [
+      "fn",
+      "xs"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "takeWhile",
+    "description": "The function called per iteration.",
+    "args": [
+      "fn",
+      "xs"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "tap",
+    "description": "The function to call with x. The return value of fn will be thrown away.",
+    "args": [
+      "fn",
+      "x"
+    ],
+    "returns": "*"
+  },
+  {
+    "name": "test",
+    "description": "Determines whether a given string matches a given regular expression.",
+    "args": [
+      "pattern",
+      "str"
+    ],
+    "returns": "Boolean"
+  },
+  {
+    "name": "times",
+    "description": "The function to invoke. Passed one argument, the current value of n.",
+    "args": [
+      "fn",
+      "n"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "toLower",
+    "description": "The string to lower case.",
+    "args": [
+      "str"
+    ],
+    "returns": "String"
+  },
+  {
+    "name": "toPairs",
+    "description": "The object to extract from",
+    "args": [
+      "obj"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "toPairsIn",
+    "description": "The object to extract from",
+    "args": [
+      "obj"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "toString",
+    "description": "Returns the string representation of the given value. eval'ing the output\nshould result in a value equivalent to the input value. Many of the built-in\ntoString methods do not satisfy this requirement.",
+    "args": [
+      "val"
+    ],
+    "returns": "String"
+  },
+  {
+    "name": "toUpper",
+    "description": "The string to upper case.",
+    "args": [
+      "str"
+    ],
+    "returns": "String"
+  },
+  {
+    "name": "transduce",
+    "description": "The transducer function. Receives a transformer and returns a transformer.",
+    "args": [
+      "xf",
+      "fn",
+      "acc",
+      "list"
+    ],
+    "returns": "*"
+  },
+  {
+    "name": "transpose",
+    "description": "A 2D list",
+    "args": [
+      "list"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "traverse",
+    "description": "Maps an Applicative-returning\nfunction over a Traversable,\nthen uses sequence to transform the resulting Traversable of Applicative\ninto an Applicative of Traversable.",
+    "args": [
+      "of",
+      "f",
+      "traversable"
+    ],
+    "returns": "*"
+  },
+  {
+    "name": "trim",
+    "description": "The string to trim.",
+    "args": [
+      "str"
+    ],
+    "returns": "String"
+  },
+  {
+    "name": "tryCatch",
+    "description": "The function that may throw.",
+    "args": [
+      "tryer",
+      "catcher"
+    ],
+    "returns": "function"
+  },
+  {
+    "name": "type",
+    "description": "The value to test",
+    "args": [
+      "val"
+    ],
+    "returns": "String"
+  },
+  {
+    "name": "unapply",
+    "description": "Takes a function fn, which takes a single array argument, and returns a\nfunction which:",
+    "args": [
+      "fn"
+    ],
+    "returns": "function"
+  },
+  {
+    "name": "unary",
+    "description": "The function to wrap.",
+    "args": [
+      "fn"
+    ],
+    "returns": "function"
+  },
+  {
+    "name": "uncurryN",
+    "description": "The arity for the returned function.",
+    "args": [
+      "length",
+      "fn"
+    ],
+    "returns": "function"
+  },
+  {
+    "name": "unfold",
+    "description": "The iterator function. receives one argument, seed, and returns\n       either false to quit iteration or an array of length two to proceed. The element\n       at index 0 of this array will be added to the resulting array, and the element\n       at index 1 will be passed to the next call to fn.",
+    "args": [
+      "fn",
+      "seed"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "union",
+    "description": "The first list.",
+    "args": [
+      "as",
+      "bs"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "unionWith",
+    "description": "A predicate used to test whether two items are equal.",
+    "args": [
+      "pred",
+      "list1",
+      "list2"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "uniq",
+    "description": "The array to consider.",
+    "args": [
+      "list"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "uniqBy",
+    "description": "A function used to produce a value to use during comparisons.",
+    "args": [
+      "fn",
+      "list"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "uniqWith",
+    "description": "A predicate used to test whether two items are equal.",
+    "args": [
+      "pred",
+      "list"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "unless",
+    "description": "A predicate function",
+    "args": [
+      "pred",
+      "whenFalseFn",
+      "x"
+    ],
+    "returns": "*"
+  },
+  {
+    "name": "unnest",
+    "description": "Shorthand for R.chain(R.identity), which removes one level of nesting from\nany Chain.",
+    "args": [
+      "list"
+    ],
+    "returns": "*"
+  },
+  {
+    "name": "until",
+    "description": "A predicate function",
+    "args": [
+      "pred",
+      "fn",
+      "init"
+    ],
+    "returns": "*"
+  },
+  {
+    "name": "update",
+    "description": "The index to update.",
+    "args": [
+      "idx",
+      "x",
+      "list"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "useWith",
+    "description": "The function to wrap.",
+    "args": [
+      "fn",
+      "transformers"
+    ],
+    "returns": "function"
+  },
+  {
+    "name": "values",
+    "description": "The object to extract values from",
+    "args": [
+      "obj"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "valuesIn",
+    "description": "The object to extract values from",
+    "args": [
+      "obj"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "view",
+    "description": "Returns a \"view\" of the given data structure, determined by the given lens.\nThe lens's focus determines which portion of the data structure is visible.",
+    "args": [
+      "lens",
+      "x"
+    ],
+    "returns": "*"
+  },
+  {
+    "name": "when",
+    "description": "A predicate function",
+    "args": [
+      "pred",
+      "whenTrueFn",
+      "x"
+    ],
+    "returns": "*"
+  },
+  {
+    "name": "where",
+    "description": "Takes a spec object and a test object; returns true if the test satisfies\nthe spec. Each of the spec's own properties must be a predicate function.\nEach predicate is applied to the value of the corresponding property of the\ntest object. where returns true if all the predicates return true, false\notherwise.",
+    "args": [
+      "spec",
+      "testObj"
+    ],
+    "returns": "Boolean"
+  },
+  {
+    "name": "whereEq",
+    "description": "Takes a spec object and a test object; returns true if the test satisfies\nthe spec, false otherwise. An object satisfies the spec if, for each of the\nspec's own properties, accessing that property of the object gives the same\nvalue (in R.equals terms) as accessing that property of the\nspec.",
+    "args": [
+      "spec",
+      "testObj"
+    ],
+    "returns": "Boolean"
+  },
+  {
+    "name": "without",
+    "description": "The values to be removed from list2.",
+    "args": [
+      "list1",
+      "list2"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "xprod",
+    "description": "The first list.",
+    "args": [
+      "as",
+      "bs"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "zip",
+    "description": "The first array to consider.",
+    "args": [
+      "list1",
+      "list2"
+    ],
+    "returns": "Array"
+  },
+  {
+    "name": "zipObj",
+    "description": "The array that will be properties on the output object.",
+    "args": [
+      "keys",
+      "values"
+    ],
+    "returns": "Object"
+  },
+  {
+    "name": "zipWith",
+    "description": "The function used to combine the two elements into one value.",
+    "args": [
+      "fn",
+      "list1",
+      "list2"
+    ],
+    "returns": "Array"
+  }
+]
