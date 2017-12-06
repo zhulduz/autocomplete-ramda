@@ -8,7 +8,7 @@
     "autocomplete",
     "ramdajs"
   ],
-  "repository": "https://zhulduz@bitbucket.org/zhulduz/autocomplete-ramda.git",
+  "repository": "https://github.com/zhulduz/autocomplete-ramda.git",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
